@@ -144,7 +144,29 @@ footer span {
     header {
         padding: 45px 15px;
     }
+}.search-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 25px auto;
+    padding: 0 15px;
 }
+
+#searchInput {
+    width: 100%;
+    padding: 15px 20px;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    font-size: 16px;
+    outline: none;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+
+#searchInput:focus {
+    border-color: #4285F4;
+    box-shadow: 0 0 8px rgba(66, 133, 244, 0.25);
+}
+    
 </style>
 </head>
 
@@ -235,6 +257,13 @@ footer span {
 
     <h2 class="section-title">03. Topic-wise DSA Learning 📚</h2>
 
+    <div class="search-container">
+    <input
+        type="text"
+        id="searchInput"
+        placeholder="🔍 Search DSA topics..."
+    >
+</div>
     <div class="cards">
 
         <div class="card">
@@ -402,5 +431,18 @@ footer span {
     <p>Learn Together. Build Together. Grow Together.</p>
 </footer>
 
+ <script>
+const searchInput = document.getElementById("searchInput");
+
+searchInput.addEventListener("input", function () {
+    const query = this.value.toLowerCase();
+    const cards = document.querySelectorAll(".cards > *");
+
+    cards.forEach(card => {
+        const text = card.innerText.toLowerCase();
+        card.style.display = text.includes(query) ? "" : "none";
+    });
+});
+</script>   
 </body>
 </html>
