@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GDG | DSA Resource Library</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #071b16;
+    color: #f1f5f2;
+    line-height: 1.6;
+}
+
+header {
+    text-align: center;
+    padding: 65px 20px;
+    background: linear-gradient(135deg, #0b3d2e, #071b16);
+    border-bottom: 1px solid #1d6048;
+}
+
+.tag {
+    display: inline-block;
+    padding: 7px 16px;
+    border: 1px solid #42d392;
+    color: #42d392;
+    border-radius: 30px;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 42px;
+    color: #ffffff;
+    margin-bottom: 12px;
+}
+
+header h1 span {
+    color: #42d392;
+}
+
+header p {
+    color: #b8ccc2;
+    font-size: 16px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 35px 20px;
+}
+
+.section-title {
+    font-size: 25px;
+    color: #42d392;
+    margin: 35px 0 18px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: #102b22;
+    border: 1px solid #23543f;
+    border-radius: 15px;
+    padding: 23px;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    border-color: #42d392;
+    box-shadow: 0 8px 25px #00000035;
+}
+
+.card h3 {
+    color: #ffffff;
+    font-size: 19px;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #b8ccc2;
+    font-size: 14px;
+    margin-bottom: 18px;
+}
+
+.link {
+    display: inline-block;
+    text-decoration: none;
+    color: #42d392;
+    border: 1px solid #42d392;
+    padding: 8px 15px;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.link:hover {
+    background: #42d392;
+    color: #071b16;
+}
+
+.steps {
+    background: #102b22;
+    border: 1px solid #23543f;
+    padding: 25px;
+    border-radius: 15px;
+}
+
+.steps p {
+    color: #d1e0d8;
+    margin: 12px 0;
+}
+
+footer {
+    text-align: center;
+    padding: 30px 15px;
+    margin-top: 30px;
+    background: #04120e;
+    color: #a8bdb2;
+    font-size: 14px;
+}
+
+footer span {
+    color: #42d392;
+}
+
+@media(max-width: 600px) {
+    header h1 {
+        font-size: 30px;
+    }
+
+    header {
+        padding: 45px 15px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <div class="tag">GDG ON CAMPUS</div>
+
+    <h1>DSA <span>Resource Library</span></h1>
+
+    <p>
+        Learn. Practice. Improve. Repeat.
+    </p>
+
+    <p>
+        Your beginner-friendly guide to Data Structures
+        and Algorithms.
+    </p>
+</header>
+
+<main class="container">
+
+    <h2 class="section-title">01. C++ Fundamentals 💻</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Programiz C++</h3>
+            <p>
+                Learn C++ from basics including variables,
+                loops, conditions, functions and arrays.
+            </p>
+            <a class="link"
+               href="https://www.programiz.com/cpp-programming"
+               target="_blank" rel="noopener noreferrer">
+               Start Learning →
+            </a>
+        </div>
+
+        <div class="card">
+            <h3>Microsoft C++ Documentation</h3>
+            <p>
+                Explore C++ concepts, language references
+                and standard library documentation.
+            </p>
+            <a class="link"
+               href="https://learn.microsoft.com/en-us/cpp/cpp/"
+               target="_blank" rel="noopener noreferrer">
+               Explore Docs →
+            </a>
+        </div>
+
+    </div>
+
+
+    <h2 class="section-title">02. DSA Roadmaps 🗺️</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>GeeksforGeeks DSA Roadmap</h3>
+            <p>
+                Follow a structured path from programming
+                basics to advanced DSA topics.
+            </p>
+            <a class="link"
+               href="https://www.geeksforgeeks.org/dsa/complete-roadmap-to-learn-dsa-from-scratch/"
+               target="_blank" rel="noopener noreferrer">
+               View Roadmap →
+            </a>
+        </div>
+
+        <div class="card">
+            <h3>Striver's A2Z DSA Sheet</h3>
+            <p>
+                A structured DSA learning sheet covering
+                important topics from basics to advanced.
+            </p>
+            <a class="link"
+               href="https://takeuforward.org/prep-hub/strivers-a2z-dsa-sheet"
+               target="_blank" rel="noopener noreferrer">
+               Explore Sheet →
+            </a>
+        </div>
+
+    </div>
+
+
+    <h2 class="section-title">03. Topic-wise DSA Learning 📚</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>Arrays & Strings</h3>
+            <p>
+                Understand arrays, strings and basic
+                problem-solving techniques.
+            </p>
+            <a class="link"
+               href="https://www.geeksforgeeks.org/dsa/complete-roadmap-to-learn-dsa-from-scratch/"
+               target="_blank" rel="noopener noreferrer">
+               Learn Topics →
+            </a>
+        </div>
+
+        <div class="card">
+            <h3>Searching & Sorting</h3>
+            <p>
+                Learn searching methods, sorting algorithms
+                and their applications.
+            </p>
+            <a class="link"
+               href="https://www.geeksforgeeks.org/dsa/complete-roadmap-to-learn-dsa-from-scratch/"
+               target="_blank" rel="noopener noreferrer">
+               Learn Topics →
+            </a>
+        </div>
+
+        <div class="card">
+            <h3>Linked List, Stack & Queue</h3>
+            <p>
+                Understand important linear data structures
+                and their operations.
+            </p>
+            <a class="link"
+               href="https://www.geeksforgeeks.org/dsa/complete-roadmap-to-learn-dsa-from-scratch/"
+               target="_blank" rel="noopener noreferrer">
+               Learn Topics →
+            </a>
+        </div>
+
+        <div class="card">
+            <h3>Trees & Graphs</h3>
+            <p>
+                Explore tree structures, graph concepts
+                and traversal algorithms.
+            </p>
+            <a class="link"
+               href="https://www.geeksforgeeks.org/dsa/complete-roadmap-to-learn-dsa-from-scratch/"
+               target="_blank" rel="noopener noreferrer">
+               Learn Topics →
+            </a>
+        </div>
+
+        <div class="card">
+            <h3>Recursion & Backtracking</h3>
+            <p>
+                Build problem-solving skills using
+                recursive approaches.
+            </p>
+            <a class="link"
+               href="https://www.geeksforgeeks.org/dsa/complete-roadmap-to-learn-dsa-from-scratch/"
+               target="_blank" rel="noopener noreferrer">
+               Learn Topics →
+            </a>
+        </div>
+
+        <div class="card">
+            <h3>Greedy & Dynamic Programming</h3>
+            <p>
+                Explore advanced algorithmic techniques
+                and optimization problems.
+            </p>
+            <a class="link"
+               href="https://www.geeksforgeeks.org/dsa/complete-roadmap-to-learn-dsa-from-scratch/"
+               target="_blank" rel="noopener noreferrer">
+               Learn Topics →
+            </a>
+        </div>
+
+    </div>
+
+
+    <h2 class="section-title">04. Coding Practice Platforms ⚡</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>HackerRank</h3>
+            <p>
+                Practice algorithms and improve
+                your coding fundamentals.
+            </p>
+            <a class="link"
+               href="https://www.hackerrank.com/domains/algorithms"
+               target="_blank" rel="noopener noreferrer">
+               Start Practicing →
+            </a>
+        </div>
+
+        <div class="card">
+            <h3>Codeforces</h3>
+            <p>
+                Solve programming problems and
+                improve competitive coding skills.
+            </p>
+            <a class="link"
+               href="https://codeforces.com/problemset"
+               target="_blank" rel="noopener noreferrer">
+               Solve Problems →
+            </a>
+        </div>
+
+        <div class="card">
+            <h3>GeeksforGeeks Practice</h3>
+            <p>
+                Explore DSA topics and practice
+                coding problems.
+            </p>
+            <a class="link"
+               href="https://www.geeksforgeeks.org/explore"
+               target="_blank" rel="noopener noreferrer">
+               Practice Now →
+            </a>
+        </div>
+
+    </div>
+
+
+    <h2 class="section-title">05. Visual Learning 🎯</h2>
+
+    <div class="cards">
+
+        <div class="card">
+            <h3>VisuAlgo</h3>
+            <p>
+                Understand data structures and algorithms
+                through interactive animations.
+            </p>
+            <a class="link"
+               href="https://visualgo.net/en"
+               target="_blank" rel="noopener noreferrer">
+               Visualize DSA →
+            </a>
+        </div>
+
+    </div>
+
+
+    <h2 class="section-title">06. How to Start? 🚀</h2>
+
+    <div class="steps">
+        <p>✅ Step 1: Choose one programming language (C++ recommended).</p>
+        <p>✅ Step 2: Learn basic programming concepts.</p>
+        <p>✅ Step 3: Start DSA with Arrays and Strings.</p>
+        <p>✅ Step 4: Follow one structured DSA roadmap.</p>
+        <p>✅ Step 5: Practice coding problems regularly.</p>
+        <p>✅ Step 6: Revise concepts and track your progress.</p>
+    </div>
+
+</main>
+
+<footer>
+    <p>Made with 💚 by <span>GDG On Campus</span></p>
+    <p>Learn Together. Build Together. Grow Together.</p>
+</footer>
+
+</body>
+</html>
